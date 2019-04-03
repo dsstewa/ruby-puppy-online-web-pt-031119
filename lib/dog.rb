@@ -4,7 +4,7 @@ class Dog
   attr_accessor :name
   def initialize(dog)
       @name = dog
-      @@all << dog
+      @@all << self
       #binding.pry
     end
     
@@ -17,7 +17,7 @@ class Dog
   def self.all
     
     @@all.each do |dog|
-      puts dog
+      puts dog.name
     end
   end
   
