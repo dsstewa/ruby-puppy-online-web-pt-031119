@@ -15,6 +15,7 @@ class Dog
   end
   
   def self.all
+    binding.pry
     @@all.each do |dog|
       puts dog
     end
